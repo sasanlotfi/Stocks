@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock financial information</title>
+</head>
+<body>
+
+<h>Please enter the ticker name receive the financial information.</h>
+<br>
+ <form action="/stock_info" method = "POST">{% csrf_token%}
+      <input type="text" id = "ticker_name" name ="Ticker" size = "10">
+      <input type = "submit" value = "Submit">
+ </form>
+
+
+
+</body>
+</html>
