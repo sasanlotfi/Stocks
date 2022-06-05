@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticker Info</title>
+</head>
+<body>
+{% for ticker in ticker_list %}
+
+        <a href = "{% url 'ticker_detail' ticker.pk %}"><h> {{ticker.Ticker_name}}   </h></a> <a href="{% url 'ticker_update' ticker.pk%}">Edit</a>
+        <br>
+        <br>
+
+
+{%endfor%}
+<br>
+<br>
+
+
+</body>
+</html>
